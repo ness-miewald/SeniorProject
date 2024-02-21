@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard</title>
+  <style>
+    /* Your CSS styles here */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #242424;
+      color: rgba(255, 255, 255, 0.87);
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #646cff;
+      color: white;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px;
+      background-color: #646cff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #535bf2;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .alerts {
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <h2>Welcome, <span id="patientName">Patient Name</span>!</h2>
+  <p>Last visit date: <span id="lastVisitDate">Date</span></p>
+
+  <table>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <!-- Add more columns as needed -->
+    </tr>
+    <tr onclick="handleTableClick()">
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <!-- Add more data cells as needed -->
+    </tr>
+  </table>
+
+  <!-- Rest of your patient dashboard content -->
+
+  <script>
+    function handleTableClick() {
+      alert('Table row clicked!'); // You can replace this with your desired interaction
+      // Implement your logic to interact with the table here
+    }
+  </script>
+</body>
+</html>
